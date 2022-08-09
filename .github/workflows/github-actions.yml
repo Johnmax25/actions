@@ -1,7 +1,9 @@
 name: github-actions
 on: [push]
-jobs:ls
-  check-bats-version:
+env: 
+  AWS_REGION: us-west-2
+jobs: 
+  update-deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
